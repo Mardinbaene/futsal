@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Lapangan Futsal</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light">
+    <!-- Gunakan warna latar belakang yang umum agar kontras dan estetis -->
+
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-success shadow fixed-top"
+      id="navbar1"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">FutsalBooking</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- Navigasi -->
+            <li class="nav-item">
+              <a class="nav-link active" href="#navbarNav">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#jadwal">Jadwal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#booking">Booking Lapangan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container-fluid bg-light py-5 mt-5">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start px-5">
+          <h2 class="fw-bold mb-3">Kompetisi Futsal Antar<br />Club</h2>
+          <p class="text-muted d-none d-md-block">
+            Kami mengadakan kompetisi futsal untuk semua kalangan. Daftarkan tim
+            Anda dan raih kemenangan!
+          </p>
+          <a href="#booking" class="btn btn-success mt-3">Booking Sekarang</a>
+        </div>
+        <div class="col-md-6">
+          <!-- Gambar hero -->
+          <img src="futsal.jpg" alt="Lapangan Futsal" class="img-fluid" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Rekomendasi Lapangan -->
+    <section class="container my-5">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="h5 fw-semibold">
+          Rekomendasi <span class="text-danger">Lapangan</span>
+        </h2>
+        <a href="#" class="text-muted small text-decoration-none"
+          >Selengkapnya</a
+        >
+      </div>
+
+      <div class="row g-4">
+        <!-- Setiap kartu lapangan -->
+        <!-- 1 -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://megahgemilang.com/wp-content/uploads/2020/11/Tips-Cara-Membuat-Lapangan-Futsal.jpg"
+              class="card-img-top"
+              alt="Lapangan Futsal"
+            />
+            <div class="card-body">
+              <h6 class="card-title fw-bold text-primary">
+                ASATU ARENA CIKINI
+              </h6>
+              <p class="card-text text-muted small">
+                Jakarta Pusat • <span class="text-danger">Lapangan 1</span>
+              </p>
+              <p class="text-success fw-semibold small">
+                Harga mulai Rp 100.000
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS0BtombGYtz0_9vRexwUx_GEStQ7zbKKi_Q&s"
+              class="card-img-top"
+              alt="Lapangan Futsal"
+            />
+            <div class="card-body">
+              <h6 class="card-title fw-bold text-primary">
+                ALAPANGAN Permata Hijau
+              </h6>
+              <p class="card-text text-muted small">
+                Jakarta Selatan • <span class="text-danger">Lapangan 2</span>
+              </p>
+              <p class="text-success fw-semibold small">
+                Harga mulai Rp 120.000
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz7ieDaIlBfQU5DHSr_-2XXvgfXYr-09BN6A&s"
+              class="card-img-top"
+              alt="Lapangan Futsal"
+            />
+            <div class="card-body">
+              <h6 class="card-title fw-bold text-primary">T Arena</h6>
+              <p class="card-text text-muted small">
+                Jakarta Selatan • <span class="text-danger">Lapangan 3</span>
+              </p>
+              <p class="text-success fw-semibold small">
+                Harga mulai Rp 250.000
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://gelora-public-storage.s3-ap-southeast-1.amazonaws.com/upload/public-20210928054128.jpg"
+              class="card-img-top"
+              alt="Lapangan Futsal"
+            />
+            <div class="card-body">
+              <h6 class="card-title fw-bold text-primary">BAIS Soccer Field</h6>
+              <p class="card-text text-muted small">
+                Bandung • <span class="text-danger">Lapangan 3</span>
+              </p>
+              <p class="text-success fw-semibold small">
+                Harga mulai Rp 600.000
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jadwal Pertandingan -->
+    <section class="container my-5" id="jadwal">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="h5 fw-semibold">
+          Jadwal <span class="text-primary">Pertandingan</span>
+        </h2>
+        <a href="#" class="text-muted small text-decoration-none"
+          >Lihat Semua Jadwal</a
+        >
+      </div>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered align-middle">
+          <thead class="table-success">
+            <tr>
+              <th>No</th>
+              <th>Tim A</th>
+              <th>Tim B</th>
+              <th>Tanggal</th>
+              <th>Waktu</th>
+              <th>Lapangan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Jakarta United</td>
+              <td>Bandung FC</td>
+              <td>12 Mei 2025</td>
+              <td>15:00</td>
+              <td>ASATU ARENA CIKINI</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Depok Stars</td>
+              <td>Bekasi Warriors</td>
+              <td>13 Mei 2025</td>
+              <td>17:00</td>
+              <td>T Arena</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Tangerang Thunder</td>
+              <td>Solo Kings</td>
+              <td>14 Mei 2025</td>
+              <td>16:00</td>
+              <td>BAIS Soccer Field</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Form Booking -->
+    <section class="container my-5" id="booking">
+      <div class="mb-4">
+        <h2 class="h5 fw-semibold">
+          Booking <span class="text-success">Lapangan</span>
+        </h2>
+        <p class="text-muted">
+          Isi form berikut untuk melakukan pemesanan lapangan futsal.
+        </p>
+      </div>
+      <form>
+        <div class="row g-3">
+          <!-- Input nama -->
+          <div class="col-md-6">
+            <label for="nama" class="form-label">Nama Lengkap</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nama"
+              placeholder="Nama Anda"
+              required
+            />
+          </div>
+          <!-- Input email -->
+          <div class="col-md-6">
+            <label for="email" class="form-label">Alamat Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="email@example.com"
+              required
+            />
+          </div>
+          <!-- Input tanggal -->
+          <div class="col-md-6">
+            <label for="tanggal" class="form-label">Tanggal Booking</label>
+            <input type="date" class="form-control" id="tanggal" required />
+          </div>
+          <!-- Input waktu -->
+          <div class="col-md-6">
+            <label for="waktu" class="form-label">Waktu</label>
+            <input type="time" class="form-control" id="waktu" required />
+          </div>
+          <!-- Dropdown lapangan -->
+          <div class="col-md-6">
+            <label for="lapangan" class="form-label">Pilih Lapangan</label>
+            <select class="form-select" id="lapangan" required>
+              <option selected disabled>-- Pilih Lapangan --</option>
+              <option>ASATU ARENA CIKINI</option>
+              <option>ALAPANGAN Permata Hijau</option>
+              <option>T Arena</option>
+              <option>BAIS Soccer Field</option>
+            </select>
+          </div>
+          <!-- Input durasi -->
+          <div class="col-md-6">
+            <label for="durasi" class="form-label">Durasi (jam)</label>
+            <input
+              type="number"
+              class="form-control"
+              id="durasi"
+              min="1"
+              max="5"
+              required
+            />
+          </div>
+        </div>
+        <!-- Tombol Submit -->
+        <div class="mt-4">
+          <button type="submit" class="btn btn-success">
+            Booking Sekarang
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="container my-5" id="faq">
+      <div class="mb-4">
+        <h2 class="h5 fw-semibold">
+          Pertanyaan yang Sering Diajukan
+          <span class="text-primary">(FAQ)</span>
+        </h2>
+        <p class="text-muted">
+          Berikut beberapa pertanyaan umum tentang pemesanan lapangan futsal.
+        </p>
+      </div>
+
+      <!-- Accordion FAQ -->
+      <div class="accordion" id="faqAccordion">
+        <!-- Pertanyaan 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+            >
+              Bagaimana cara melakukan booking lapangan?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              Anda dapat mengisi form pada bagian
+              <strong>Booking Lapangan</strong> dan klik tombol "Booking
+              Sekarang".
+            </div>
+          </div>
+        </div>
+
+        <!-- Pertanyaan 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+            >
+              Berapa lama maksimal durasi sewa?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Durasi maksimal untuk setiap booking adalah
+              <strong>5 jam</strong>.
+            </div>
+          </div>
+        </div>
+
+        <!-- Pertanyaan 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+            >
+              Apakah bisa membatalkan jadwal yang sudah dibooking?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Pembatalan bisa dilakukan maksimal
+              <strong>24 jam sebelum waktu booking</strong> melalui email atau
+              kontak kami.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-success text-white py-4 mt-5">
+      <div class="container text-center">
+        <p>&copy; 2025 FutsalBooking.</p>
+        <p>Kontak: info@futsalbooking.com</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
